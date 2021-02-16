@@ -1,11 +1,77 @@
-<!doctype html>
-<html>
-   <head>
-      <meta charset="utf-8">
-      <title>Sshub documets</title>
-   <body>  
-      <a>
-      <button> Continue </button>
-      </a>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <h3>Seconds left: <span id="time-left">10</span></h3>
+  <button id="start-button">Start</button>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 title="Baltic Sea" style="text-align:center;" tabindex="1" >The Baltic Sea</h1>
+    <h2  style="text-align:center;" tabindex="2" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><u>Summary</u></h2>
+  <p  title="The Baltic Sea" class="p"><ul>
+    <li id="1" style="font-size: 18px;">The Baltic Sea is getting polluted by plastic bags, food waste E.C.T</li>
+    <li style="font-size: 18px;">What will happen if the world get's polluted? <br> The Sea's ecosystem wil get spolied and there wont be animals for the future. </li>
+    <li style="font-size: 18px; ">Elon Musk is helping the planet a lot by making electric cars which can be rechached meaning it saves a lot of money and you don't need to <br>buy a car soo soon and it does'nt relese any carbon dioxcide.</li>
+    <li style="font-size: 18px;"> Fishes are getting stuck by plastic bags and nets.</li>
+    <p style="text-align: center;">I am pretty sure that you knew that the Baltic Sea it the most polluted sea in the world!</p>
+  </ul></p>
+         
+        
+   
+    <style>
+        
+        h1{
+          position: static;
+          font-family: arial;
+         color: blue;
+          font-size: 5ch;
+          font-family: 'Times New Roman', Times, serif;
+        } 
+        .p{
+
+        }
+        
+        
+    </style>
+</head>
+<body >
+  <script>
+    
+      window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("topBox").style.fontSize = "9px";
+  } else {
+    document.getElementById("topBox").style.fontSize = "30px";
+  }
+}
+window.addEventListener("keydown", (event) => {
+  if (event.key === 'c' && event.ctrlKey){
+  event.preventDefault();
+  window.close();
+  
+  }
+});
+document.addEventListener('DOMContentLoaded', () =>{
+  const timeLeftDisplay = document.querySelector('#time-left');
+  const startBtn = document.querySelector('#start-button');
+   let timeLeft = 100;
+    function countDown(){
+      setInterval(function(){
+        if (timeLeft <= 0){
+          clearInterval(timeLeft = 0);
+          window.close();
+        }
+
+        timeLeftDisplay.innerHTML = timeLeft
+        timeLeft-=1;
+      }, 1500)
+    }
+    startBtn.addEventListener('click', countDown);
+})
+
+  </script>  
+</body>
 </html>
