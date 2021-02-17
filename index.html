@@ -16,7 +16,7 @@
   </ul></p>
     <div id="timerr">
       <h3><span id="time-left">2min</span></h3>
-      <button id="start-button">Start</button>
+      <button id="start-button" onclick="disable">Start</button>
     </div>    
    
     <style>
@@ -54,8 +54,11 @@
 </head>
 <body style="color: brown;">
   <script>
-      var button = document.getElementById('start-button').onclick = disabled;
-        var disabled = button.disabled= true;
+      function disable(){
+           button.disabled= true;
+      }
+      var button = document.getElementById('start-button');
+        
     
       window.onscroll = function() {scrollFunction()};
 
@@ -91,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     }
     startBtn.addEventListener('click', countDown);
 })
+      
 
   </script>  
 </body>
