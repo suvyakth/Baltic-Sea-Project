@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baltic sea project</title>
+    <title>Document</title>
     <h1 title="Baltic Sea" style="text-align:center;" tabindex="1" >The Baltic Sea</h1>
     <h2  style="text-align:center;" tabindex="2" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><u>Summary</u></h2>
   <p  title="The Baltic Sea" class="p"><ul>
@@ -16,7 +16,7 @@
   </ul></p>
     <div id="timerr">
       <h3><span id="time-left">2min</span></h3>
-      <button id="start-button" onclick="disable">Start</button>
+      <button id="start-button">Start</button>
     </div>    
    
     <style>
@@ -54,11 +54,6 @@
 </head>
 <body style="color: brown;">
   <script>
-      function disable(){
-           button.disabled= true;
-      }
-      var button = document.getElementById('start-button');
-        
     
       window.onscroll = function() {scrollFunction()};
 
@@ -94,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     }
     startBtn.addEventListener('click', countDown);
 })
-      
+
 
   </script>  
 </body>
