@@ -13,6 +13,51 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </nav>
+            <style>
+        body {
+    margin: 0 0 55px 0;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:200px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eeeeee;
+}
+
+.nav__link--active {
+    color: blue;
+}
+
+.nav__icon {
+    font-size: 38px;
+}
+    </style>
     <title>Document</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -30,6 +75,27 @@
       <h3><span id="time-left">2min</span></h3>
       <button id="start-button">Start</button>
     </div>
+      <center>
+       <ul> <h1 style="color: grey;">Preview</h1></ul>
+    <img src="./assets/BeFunky-collage (1).jpg" style="width: 75%; height: 75%;">
+</center>
+<center>
+    <a href="https://docs.google.com/presentation/d/1TjhPPt5DTyPsWBxCxbO_cF5RQSmld1J4SLd63eV5d6A/edit?usp=sharing">Slides</a>
+</center>
+<nav class="nav">
+  <a href="facebook.com" class="nav__link">
+    <i class="fa fa-facebook"></i>
+    <span class="nav__text">Facebook</span>
+  </a>
+  <a href="instegram.com" class="nav__link nav__link--active">
+    <i class="fa fa-instagram"></i>
+    <span class="nav__text">Instergram</span>
+  </a>
+  <a href="twitter.com" class="nav__link">
+    <i  class="fa fa-twitter" style="size: 50%;"></i>
+    <i style="size: 10%;">Twitter</i>
+  </a>
+</nav>
     <style>
         
         h1{
