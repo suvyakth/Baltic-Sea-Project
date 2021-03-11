@@ -1,176 +1,520 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Baltic Sea team</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <style>
+       .jumbotron {
+    text-align: center;
+    background: none;
+}
+
+.sectionLight {
+    background-color: white;
+    padding: 2rem;
+}
+
+.sectionDark {
+    background-color: lightgrey;
+    padding: 2rem;
+}
+
+.coolStuffWrapper {
+    margin-top: 20px;
+}
+
+.coolStuffBtn {
+    background-color: rgba(0, 128, 0, 0.493);
+    color: #ffffff;
+    display: block;
+    margin: auto;
+}
+
+.modal-title {
+    margin-left: auto;
+ 
+}
+
+.modalFormWrapper {
+    padding: 2rem;
+}
+
+.imgCenter {
+  display: block;
+  margin: auto;
+}
+
+.btnCenter {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 67%;
+}
+
+.carousel-control-next-icon {
+    background-color: black  !important;
+}
+
+.carousel-control-prev-icon {
+    background-color: black  !important;
+}
+p.navbar-brand{
+    word-spacing: 16cm ;
+}
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+   </style>
+    <!-- <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-min.css"> --->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_5F8S6MuuRswZYa2sExpgb");
+        })();
+    </script>
+ 
+</head>
+
+<body>
+   
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-            <a class="navbar-brand">Baltic Sea Project</a>
-               <a class="dropdown-item" href="https://suvyakth.github.io/slides/">Slides preview</a>    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <center><p class="navbar-brand" href="#"  style="font-size: 1.2rem;" >‎Baltic-Sea </p>
+            </center>
         </nav>
-            <style>
-        body {
-    margin: 0 0 55px 0;
-}
+        <div class="sectionLight">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4">Welcome to the website of the Baltic sea</h1><br>
+                            <h5>Summary</h5>
 
-.nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height:200px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    display: flex;
-    overflow-x: auto;
-}
+                            <p style="background: black;">
+                                <li id="1" style="font-size: 18px;">The Baltic Sea is getting polluted by plastic bags, food waste E.C.T</li>
+<li style="font-size: 18px;">What will happen if the world get's polluted?  The Sea's ecosystem wil get spolied and there wont be animals for the future. </li>
+<li style="font-size: 18px; ">Elon Musk is helping the planet a lot by making electric cars which can be rechached meaning it saves a lot of money and you don't need to buy a car soo soon and it does'nt relese any carbon dioxcide.</li>
+                                <li style="font-size: 18px;"> Fishes are getting stuck by plastic bags and nets.</li>
+                                I am pretty sure that you knew that the Baltic Sea it the most polluted sea in the world!
+                            
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="timerr">
+                    <h3><span id="time-left">2min</span></h3>
+                    <button id="start-button" onclick="proper()">Start</button>
+                  </div>
+       
+                <div class="col"></div>
+            </div>
+        </div>
+        <!-- section two -->
+        <div class="sectionDark">
+            <div class="row">
+                <div class="col-sm-12 col-md-1 offset-md-2">
+                   ...
+                </div>
 
-.nav__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    min-width: 50px;
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #444444;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: background-color 0.1s ease-in-out;
-}
+                <div class="col-sm-12 col-md-6">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p style="font-size: 1.4rem;">"We have to work hard  to save the Baltic Sea now or we will have to <br> work hader than now later."</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-9">
+                           
+                        </div>
+                  
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="coolStuffWrapper">
+                        <button type="button" class="btn btn-lg coolStuffBtn" id="button1" data-toggle="modal"
+                            data-target="#coolStuffModal">Get infomation about how to save the Baltic Sea!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-.nav__link:hover {
-    background-color: #eeeeee;
-}
 
-.nav__link--active {
-    color: blue;
-}
 
-.nav__icon {
-    font-size: 38px;
-}
-    </style>
-    <title>Document</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  
-    <h1 title="Baltic Sea" style="text-align:center;" tabindex="1" >The Baltic Sea</h1>
-    <h2  style="text-align:center;" tabindex="2" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><u>Summary</u></h2>
-  <p  title="The Baltic Sea" class="p"><ul>
-    <li id="1" style="font-size: 18px;">The Baltic Sea is getting polluted by plastic bags, food waste E.C.T</li>
-    <li style="font-size: 18px;">What will happen if the world get's polluted? <br> The Sea's ecosystem wil get spolied and there wont be animals for the future. </li>
-    <li style="font-size: 18px; ">Elon Musk is helping the planet a lot by making electric cars which can be rechached meaning it saves a lot of money and you don't need to <br>buy a car soo soon and it does'nt relese any carbon dioxcide.</li>
-    <li style="font-size: 18px;"> Fishes are getting stuck by plastic bags and nets.</li>
-    <p style="text-align: center;">I am pretty sure that you knew that the Baltic Sea it the most polluted sea in the world!</p>
-  </ul></p>
-    <div id="timerr">
-      <h3><span id="time-left">2min</span></h3>
-      <button id="start-button">Start</button>
+        <div class="sectionLight">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid imgCenter" src="https://lh3.googleusercontent.com/-Ge5TGReC0C4/YEjZ7jNDOdI/AAAAAAAABn8/uKWgT7Vv8wo_DUPuCxrhlj3pzdjuAJwPgCK8BGAsYHg/s420/2021-03-10.png" style="width: 100%; height: 100%;">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid imgCenter" src="https://lh3.googleusercontent.com/-n3OoDbtYnXA/YEjZ8uEidiI/AAAAAAAABoA/vVBKB1hsBFAdo0_ob8AQRqwE9TUlWXAeQCK8BGAsYHg/s0/2021-03-10.png" style="width: 100%; height: 100%;">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <img class="img-fluid imgCenter" src="https://th.bing.com/th/id/Rc4bc91f5b29ea9d3bfb1bf140f8af18c?rik=Fq5uCSWPr8RNpw&riu=http%3a%2f%2fwww.sott.net%2fimage%2fs10%2f212364%2ffull%2fstar_wars_millennium_falcon.jpg&ehk=ZiC1r9vgu35MvIr5t8rwt8aCJTBEZJdOujS9E26tcqs%3d&risl=&pid=ImgRaw" style="width: 100%; height: 100%;">
+                            <div class="row">
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <!-- Cool Stuff Modal -->
+        <div class="modal fade" id="coolStuffModal" tabindex="-1" aria-labelledby="coolStuffLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="modalFormWrapper">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="formName">What's your name?</label>
+                                                <input type="text" class="form-control" id="formName"
+                                                    placeholder="Name" autocomplete="name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formEmail">Where should we send your cool content?</label>
+                                                <input type="text" class="form-control" id="formEmail"
+                                                    placeholder="Email" autocomplete="email">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <form id="form">
+                            <input type="submit" class="btn btn-primary" id="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-      <center>
-       <ul> <h1 style="color: grey;">Preview</h1></ul>
-    <img src="./assets/BeFunky-collage (1).jpg" style="width: 75%; height: 75%;">
-</center>
-<center>
-    <a href="https://docs.google.com/presentation/d/1TjhPPt5DTyPsWBxCxbO_cF5RQSmld1J4SLd63eV5d6A/edit?usp=sharing">Slides</a>
-</center>
-<nav class="nav">
-  <a href="facebook.com" class="nav__link">
-    <i class="fa fa-facebook"></i>
-    <span class="nav__text">Facebook</span>
-  </a>
-  <a href="instegram.com" class="nav__link nav__link--active">
-    <i class="fa fa-instagram"></i>
-    <span class="nav__text">Instergram</span>
-  </a>
-  <a href="twitter.com" class="nav__link">
-    <i  class="fa fa-twitter" style="size: 50%;"></i>
-    <i style="size: 10%;">Twitter</i>
-  </a>
-</nav>
-    <style>
-        
-        h1{
-          position: static;
-          font-family: arial;
-         color: rgb(47, 102, 255);
-         text-shadow: 10px;
-          font-size: 5ch;
-          font-family: 'Times New Roman', Times, serif;
-        } 
-        h3{
-          font-family: 'Times New Roman', Times, serif;
-          font-size: 45px;
-          color: white;
-        }
-        #timerr{
-          width: 190px;
-            height: 190px;
-            border-radius: 50%;
-            border: 1px solid black;
-            word-spacing: 50px; 
-            background: purple; 
-            position: absolute;
-            text-align: center;
-            
-        }
-        body{
-          background-color: aquamarine;
-        }
-        
-        
-    </style>
-</head>
-<body style="color: brown;">
-    
-  <script>
-    window.open("https://suvyakth.github.io/Baltic-Sea-Project/");
-    
-      window.onscroll = function() {scrollFunction()};
+    <div class="sectionLight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                       
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-danger btn-lg btnCenter" data-toggle="modal" data-target=".b-modal-lg" >Baltic Sea anomaly</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">    
+                     
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-danger btn-lg btn-Center" data-toggle="modal" data-target=".bb-modal-lg" style="align-self: center;">  Baltic sea facts</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("topBox").style.fontSize = "9px";
-  } else {
-    document.getElementById("topBox").style.fontSize = "30px";
-  }
-}
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-danger btnCenter" data-toggle="modal" data-target=".bbb-modal-lg">Star wars ship</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+      
+    <div class="modal fade b-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLable" aria-hidden="true">
+        <div class="modal-diaflog modal-lg">
+            <div class="modal-comtent">
+                <div class="embed-responsive-item embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://youtube.com/embed/ZMrNR_5C0Sw" allowfullscreen allow="close"></iframe>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bb-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLable" aria-hidden="true">
+        <div class="modal-diaflog modal-lg">
+            <div class="modal-comtent">
+                <div class="embed-responsive-item embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://youtube.com/embed/iIhR7UNib5E" allowfullscreen allow="close"></iframe>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bbb-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLable" aria-hidden="true">
+        <div class="modal-diaflog modal-lg">
+            <div class="modal-comtent">
+                <div class="embed-responsive-item embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://youtube.com/embed/wHG5Mpx20Lo" allowfullscreen allow="close"></iframe>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+      <style>
+          
+          h1{
+            position: static;
+            font-family: arial;
+           
+           text-shadow: 10px;
+            font-size: 5ch;
+            font-family: 'Times New Roman', Times, serif;
+          } 
+          h3{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 45px;
+            color: black;
+          }
+          #timerr{
+            width: 190px;
+              height: 190px;
+              border-radius: 50%;
+              border: 1px solid black;
+              word-spacing: 50px; 
+               background-color: greenyellow;
+              position: absolute;
+              text-align: center;
+              
+          }
+        
+          
+      </style>
+  </head>
+  <body>
+      <script>
+          function proper(){
+              document.getElementById("p").style.background = "";
+          }
+      </script>
+      
+    <script>
+    
+ 
+    window.open("https://suvyakth.github.io/Baltic-Sea-Project/");
+      
+   
+
 window.addEventListener("keydown", (event) => {
-  if (event.key === 'c' && event.ctrlKey){
-  event.preventDefault();
-  window.close();
-  
-  }
+if (event.key === 'c' && event.ctrlKey){
+event.preventDefault();
+window.close();
+
+}
 });
 
 document.addEventListener('DOMContentLoaded', () =>{
-  const timeLeftDisplay = document.querySelector('#time-left');
-  const startBtn = document.querySelector('#start-button');
-   let timeLeft = 120;
-    function countDown(){
-      setInterval(function(){
-        if (timeLeft <= 0){
-          clearInterval(timeLeft = 0);
-          window.close("https://suvyakth.github.io/Baltic-Sea-Project/");
-        }
+const timeLeftDisplay = document.querySelector('#time-left');
+const startBtn = document.querySelector('#start-button');
+ let timeLeft = 120;
+  function countDown(){
+    setInterval(function(){
+      if (timeLeft <= 0){
+        clearInterval(timeLeft = 0);
+        window.close("https://suvyakth.github.io/Baltic-Sea-Project/");
+      }
 
-        timeLeftDisplay.innerHTML = timeLeft
-        timeLeft-=1;
-      }, 1500)
-    }
-    startBtn.addEventListener('click', countDown);
+      timeLeftDisplay.innerHTML = timeLeft
+      timeLeft-=1;
+    }, 1500)
+  }
+  startBtn.addEventListener('click', countDown);
 })
 
 
-  </script>  
+</script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <!--  Always Download latest version of Boostrap and add here-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!-- <script src="bundle.js"></script> -->
+    <script type="text/javascript" >
+    // import swal from 'sweetalert';
+var Name = document.getElementById('formName').value;
+var EmailName = document.getElementById('formEmail').value;
+var form = document.getElementById('form');
+
+
+
+// // form.addEventListener('submit', function (event) {
+// //     event.preventDefault();
+
+// //     EmailName = document.getElementById('formEmail').value;
+
+// //     alert(EmailName)
+
+// //     Email.send({
+// //         SecureToken: "0a778f3f-ecf2-4332-ae36-eef80aa74917",
+// //         To: "sukarthacharya@gmail.com",
+// //         From: "sukarthacharya@gmail.com",
+// //         Subject: 'Cool Stuff',
+// //         Body: 'Hello, ' + Name.value + 'Here is an email about cool stuff' + '                                                                                                                                                                                                                                                                                                        ' + 'Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt' +
+// //             'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation' +
+// //             'ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in' +
+// //             'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur' +
+// //             'sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id' +
+// //             'est laborum'
+// //     }).then(
+// //         message => alert(message)
+// //     );
+
+// // });
+
+// var myform = $("form#myform");
+// myform.submit(function (event) {
+//     event.preventDefault();
+
+//     // Change to your service ID, or keep using the default service
+//     var service_id = "gmail";
+//     var template_id = "cool_stuff";
+
+//     myform.find("button").text("Sending...");
+//     emailjs.sendForm(service_id, template_id, myform[0])
+//         .then(function () {
+//             alert("Sent!");
+//             myform.find("button").text("Send");
+//         }, function (err) {
+//             alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+//             myform.find("button").text("Send");
+//         });
+//     return false;
+// });
+
+var service_id = "default_service";
+var template_id = "cool_stuff";
+
+form.addEventListener('submit', function (event) {
+
+    EmailName = document.getElementById('formEmail').value;
+    Name = document.getElementById('formName').value;
+
+    if (!EmailName || !Name) {
+        event.preventDefault();
+        console.error("Please enter values in the field");
+        swal("Missing values", "Please enter values in the field!", "warning");
+    //    Swal.fire({
+      //      icon: 'warning',
+        //    title: 'missing values',
+          //  text: 'Something went wrong!',
+            //footer: '<a href=>Why do I have this issue?</a>'
+          //})
+    } else {
+        event.preventDefault();
+        EmailName = document.getElementById('formEmail').value;
+        Name = document.getElementById('formName').value;
+
+        String(EmailName)
+        String(Name)
+
+
+
+        var templateParams = {
+            to_email: EmailName,
+            name: Name
+
+        };
+        emailjs.send(service_id, template_id, templateParams).then(function(response) {
+            swal("Success!", "An Email has been sent to the given email-address, please check your spam folder also.", "success");
+            console.log('SUCCESS!', response.status, response.text);
+         }, function(error) {
+            console.log('FAILED...', error);
+            swal("Error!", "there was an error sending the e-mail!", "error");
+         });
+        
+               
+
+    }
+
+});
+// var transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//         user: 'sukarthacharya@gmail.com',
+//         pass: 'sukarth.2008'
+//     }
+// });
+
+// var mailOptions = {
+//     from: 'sukarth',
+//     to: Email,
+//     subject: 'Cool Stuff',
+//     text: 'Hello, ' + Name.value + 'Here is an email about cool stuff' + '                                                                                                                                                                                                                                                                                                        ' + 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt' +
+//         'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation' +
+//         'ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in' +
+//         'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur' +
+//         'sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id' +
+//         'est laborum'
+// };
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <div>
+        <center><h6 style="color: rgb(102, 102, 102);">Some pictures from Google</h6></center>
+    </div>
+    
+        
+    
 </body>
+   
 </html>
